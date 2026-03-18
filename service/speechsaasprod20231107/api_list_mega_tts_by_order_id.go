@@ -1,4 +1,4 @@
-package speechsaasprod
+package speechsaasprod20231107
 
 import (
 	"github.com/volcengine/volcengine-go-sdk/volcengine"
@@ -27,7 +27,7 @@ const opListMegaTTSByOrderIDCommon = "ListMegaTTSByOrderID"
 //	if err == nil { // resp is now filled
 //	    fmt.Println(resp)
 //	}
-func (c *SPEECHSAASPROD) ListMegaTTSByOrderIDCommonRequest(input *map[string]interface{}) (req *request.Request, output *map[string]interface{}) {
+func (c *SPEECHSAASPROD20231107) ListMegaTTSByOrderIDCommonRequest(input *map[string]interface{}) (req *request.Request, output *map[string]interface{}) {
 	op := &request.Operation{
 		Name:       opListMegaTTSByOrderIDCommon,
 		HTTPMethod: "POST",
@@ -54,7 +54,7 @@ func (c *SPEECHSAASPROD) ListMegaTTSByOrderIDCommonRequest(input *map[string]int
 //
 // See the VOLCENGINE API reference guide for SPEECH_SAAS_PROD's
 // API operation ListMegaTTSByOrderIDCommon for usage and error information.
-func (c *SPEECHSAASPROD) ListMegaTTSByOrderIDCommon(input *map[string]interface{}) (*map[string]interface{}, error) {
+func (c *SPEECHSAASPROD20231107) ListMegaTTSByOrderIDCommon(input *map[string]interface{}) (*map[string]interface{}, error) {
 	req, out := c.ListMegaTTSByOrderIDCommonRequest(input)
 	return out, req.Send()
 }
@@ -67,7 +67,7 @@ func (c *SPEECHSAASPROD) ListMegaTTSByOrderIDCommon(input *map[string]interface{
 // The context must be non-nil and will be used for request cancellation. If the context is nil a panic will occur.
 // In the future the SDK may create sub-contexts for http.Requests. See https://golang.org/pkg/context/
 // for more information on using Contexts.
-func (c *SPEECHSAASPROD) ListMegaTTSByOrderIDCommonWithContext(ctx volcengine.Context, input *map[string]interface{}, opts ...request.Option) (*map[string]interface{}, error) {
+func (c *SPEECHSAASPROD20231107) ListMegaTTSByOrderIDCommonWithContext(ctx volcengine.Context, input *map[string]interface{}, opts ...request.Option) (*map[string]interface{}, error) {
 	req, out := c.ListMegaTTSByOrderIDCommonRequest(input)
 	req.SetContext(ctx)
 	req.ApplyOptions(opts...)
@@ -94,7 +94,7 @@ const opListMegaTTSByOrderID = "ListMegaTTSByOrderID"
 //	if err == nil { // resp is now filled
 //	    fmt.Println(resp)
 //	}
-func (c *SPEECHSAASPROD) ListMegaTTSByOrderIDRequest(input *ListMegaTTSByOrderIDInput) (req *request.Request, output *ListMegaTTSByOrderIDOutput) {
+func (c *SPEECHSAASPROD20231107) ListMegaTTSByOrderIDRequest(input *ListMegaTTSByOrderIDInput) (req *request.Request, output *ListMegaTTSByOrderIDOutput) {
 	op := &request.Operation{
 		Name:       opListMegaTTSByOrderID,
 		HTTPMethod: "POST",
@@ -121,7 +121,7 @@ func (c *SPEECHSAASPROD) ListMegaTTSByOrderIDRequest(input *ListMegaTTSByOrderID
 //
 // See the VOLCENGINE API reference guide for SPEECH_SAAS_PROD's
 // API operation ListMegaTTSByOrderID for usage and error information.
-func (c *SPEECHSAASPROD) ListMegaTTSByOrderID(input *ListMegaTTSByOrderIDInput) (*ListMegaTTSByOrderIDOutput, error) {
+func (c *SPEECHSAASPROD20231107) ListMegaTTSByOrderID(input *ListMegaTTSByOrderIDInput) (*ListMegaTTSByOrderIDOutput, error) {
 	req, out := c.ListMegaTTSByOrderIDRequest(input)
 	return out, req.Send()
 }
@@ -134,7 +134,7 @@ func (c *SPEECHSAASPROD) ListMegaTTSByOrderID(input *ListMegaTTSByOrderIDInput) 
 // The context must be non-nil and will be used for request cancellation. If the context is nil a panic will occur.
 // In the future the SDK may create sub-contexts for http.Requests. See https://golang.org/pkg/context/
 // for more information on using Contexts.
-func (c *SPEECHSAASPROD) ListMegaTTSByOrderIDWithContext(ctx volcengine.Context, input *ListMegaTTSByOrderIDInput, opts ...request.Option) (*ListMegaTTSByOrderIDOutput, error) {
+func (c *SPEECHSAASPROD20231107) ListMegaTTSByOrderIDWithContext(ctx volcengine.Context, input *ListMegaTTSByOrderIDInput, opts ...request.Option) (*ListMegaTTSByOrderIDOutput, error) {
 	req, out := c.ListMegaTTSByOrderIDRequest(input)
 	req.SetContext(ctx)
 	req.ApplyOptions(opts...)

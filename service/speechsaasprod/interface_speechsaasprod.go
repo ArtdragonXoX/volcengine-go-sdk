@@ -93,14 +93,6 @@ type SPEECHSAASPRODAPI interface {
 	ListSpeakersWithContext(volcengine.Context, *ListSpeakersInput, ...request.Option) (*ListSpeakersOutput, error)
 	ListSpeakersRequest(*ListSpeakersInput) (*request.Request, *ListSpeakersOutput)
 
-	ListMegaTTSByOrderIDCommon(*map[string]interface{}) (*map[string]interface{}, error)
-	ListMegaTTSByOrderIDCommonWithContext(volcengine.Context, *map[string]interface{}, ...request.Option) (*map[string]interface{}, error)
-	ListMegaTTSByOrderIDCommonRequest(*map[string]interface{}) (*request.Request, *map[string]interface{})
-
-	ListMegaTTSByOrderID(*ListMegaTTSByOrderIDInput) (*ListMegaTTSByOrderIDOutput, error)
-	ListMegaTTSByOrderIDWithContext(volcengine.Context, *ListMegaTTSByOrderIDInput, ...request.Option) (*ListMegaTTSByOrderIDOutput, error)
-	ListMegaTTSByOrderIDRequest(*ListMegaTTSByOrderIDInput) (*request.Request, *ListMegaTTSByOrderIDOutput)
-
 	OrderResourcePacksCommon(*map[string]interface{}) (*map[string]interface{}, error)
 	OrderResourcePacksCommonWithContext(volcengine.Context, *map[string]interface{}, ...request.Option) (*map[string]interface{}, error)
 	OrderResourcePacksCommonRequest(*map[string]interface{}) (*request.Request, *map[string]interface{})
