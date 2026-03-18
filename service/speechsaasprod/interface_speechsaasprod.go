@@ -16,19 +16,18 @@ import (
 // SPEECHSAASPRODAPI provides an interface to enable mocking the
 // speechsaasprod.SPEECHSAASPROD service client's API operation,
 //
-//    // volcengine sdk func uses an SDK service client to make a request to
-//    // SPEECH_SAAS_PROD.
-//    func myFunc(svc SPEECHSAASPRODAPI) bool {
-//        // Make svc.ActivateService request
-//    }
+//	// volcengine sdk func uses an SDK service client to make a request to
+//	// SPEECH_SAAS_PROD.
+//	func myFunc(svc SPEECHSAASPRODAPI) bool {
+//	    // Make svc.ActivateService request
+//	}
 //
-//    func main() {
-//        sess := session.New()
-//        svc := speechsaasprod.New(sess)
+//	func main() {
+//	    sess := session.New()
+//	    svc := speechsaasprod.New(sess)
 //
-//        myFunc(svc)
-//    }
-//
+//	    myFunc(svc)
+//	}
 type SPEECHSAASPRODAPI interface {
 	ActivateServiceCommon(*map[string]interface{}) (*map[string]interface{}, error)
 	ActivateServiceCommonWithContext(volcengine.Context, *map[string]interface{}, ...request.Option) (*map[string]interface{}, error)
@@ -93,6 +92,14 @@ type SPEECHSAASPRODAPI interface {
 	ListSpeakers(*ListSpeakersInput) (*ListSpeakersOutput, error)
 	ListSpeakersWithContext(volcengine.Context, *ListSpeakersInput, ...request.Option) (*ListSpeakersOutput, error)
 	ListSpeakersRequest(*ListSpeakersInput) (*request.Request, *ListSpeakersOutput)
+
+	ListMegaTTSByOrderIDCommon(*map[string]interface{}) (*map[string]interface{}, error)
+	ListMegaTTSByOrderIDCommonWithContext(volcengine.Context, *map[string]interface{}, ...request.Option) (*map[string]interface{}, error)
+	ListMegaTTSByOrderIDCommonRequest(*map[string]interface{}) (*request.Request, *map[string]interface{})
+
+	ListMegaTTSByOrderID(*ListMegaTTSByOrderIDInput) (*ListMegaTTSByOrderIDOutput, error)
+	ListMegaTTSByOrderIDWithContext(volcengine.Context, *ListMegaTTSByOrderIDInput, ...request.Option) (*ListMegaTTSByOrderIDOutput, error)
+	ListMegaTTSByOrderIDRequest(*ListMegaTTSByOrderIDInput) (*request.Request, *ListMegaTTSByOrderIDOutput)
 
 	OrderResourcePacksCommon(*map[string]interface{}) (*map[string]interface{}, error)
 	OrderResourcePacksCommonWithContext(volcengine.Context, *map[string]interface{}, ...request.Option) (*map[string]interface{}, error)
